@@ -61,10 +61,32 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+
+   Node.js allows developers to use JavaScript outside of a browser environment, this is useful because it allows us to use JS on the backend.
+   Express streamlines how we write server side code. It makes routing and middleware usage much easier.
+
 1. Understand and explain the use of Middleware?
+
+   Middleware are functions that we can either write ourselves, import from a third party, or are already built into the language. These functions are fired in the order they are put in and provide extended functionality to our server. (ie. loggers, validation, deny)
+
 1. The basic principles of the REST architectural style.
+
+   'RESTful' apps follow 5-6 guidelines. These guidelines keep your API easy to use and allows for scalability.
+
+   1. Client-Server: The client and server should be able to be developed independantly of eachother without worrying about the 'bridge' changing.
+   2. Stateless: No state from the client should be stored on the server. The client's request must ALWAYS include context.
+   3. Unified Interface: All endpoints should point to exactly what they are manipulating. This is where HATEOAS (Hypermedia as the Engine of Application State) should be used to nest various resources that don't necissarily relate to the clients request.
+   4. Cacheable: Some information can be stored outside of the server in order to reduce the time between calls.
+   5. Layered System: This means that the client and server don't need to communicate directly in order for information to be transferred.
+   6. Code-On-Demand: Code that gets sent back from a server. This one is optional.
+
 1. Understand and explain the use of Express Routers.
+
+   Express routers allow us to make our code modular by creating seperate files for each router. Each router would contain the calls and enpoints for seperate resources.
+
 1. Describe tooling used to manually test the correctness of an API.
+
+   Tools like insomnia and postman allow us to manually test our endpoints by simulating calls to them.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
